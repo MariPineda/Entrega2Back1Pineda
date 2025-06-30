@@ -1,0 +1,58 @@
+[
+  {
+    "id": "5d0c3b26-0f8d-4782-b4da-b80f901972a7",
+    "status": true,
+    "title": "Remera",
+    "description": "Algodón, estampada",
+    "code": "00003",
+    "price": 27000,
+    "stock": 8,
+    "category": "Urbana",
+    "thumbnails": [
+      "imagen5.jpg",
+      "imagen6.jpg"
+    ]
+  },
+  {
+    "id": "6b9dc008-eb4d-4d4d-a72a-7a5137effb9a",
+    "status": true,
+    "title": "Falda",
+    "description": "Cuero, corta, negra",
+    "code": "00005",
+    "price": 80000,
+    "stock": 5,
+    "category": "Salir",
+    "thumbnails": [
+      "imagen9.jpg",
+      "imagen10.jpg"
+    ]
+  },
+  {
+    "id": "664eb1fd-dddc-42f4-8729-ed03869e63ad",
+    "status": true,
+    "title": "Pantalón",
+    "description": "Cuero",
+    "code": "00005",
+    "price": 84000,
+    "stock": 5,
+    "category": "Salir",
+    "thumbnails": [
+      "imagen9.jpg",
+      "imagen10.jpg"
+    ]
+  },
+  {
+    "id": "a36496dd-bc1f-408f-a47e-b636fef61275",
+    "status": true,
+    "title": "Pantalón",
+    "description": "Jean, oxford",
+    "code": "00001",
+    "price": 58000,
+    "stock": 6,
+    "category": "Urbano",
+    "thumbnails": [
+      "imagen1.jpg",
+      "imagen2.jpg"
+    ]
+  }
+]
