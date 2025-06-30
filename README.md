@@ -1,5 +1,5 @@
 Entrega N° 2 - Curso Backend 1 - Mariana Pineda 
-En base a la entrega anterior cuyo repositorio es https://github.com/MariPineda/Entrega2Back1Pineda.git :
+En base a la entrega anterior cuyo repositorio es https://github.com/MariPineda/Entrega1Back1Pineda.git :
 
 Consigna:
 
