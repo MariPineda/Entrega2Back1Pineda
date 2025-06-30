@@ -28,20 +28,6 @@
     ]
   },
   {
-    "id": "664eb1fd-dddc-42f4-8729-ed03869e63ad",
-    "status": true,
-    "title": "Pantalón",
-    "description": "Cuero",
-    "code": "00005",
-    "price": 84000,
-    "stock": 5,
-    "category": "Salir",
-    "thumbnails": [
-      "imagen9.jpg",
-      "imagen10.jpg"
-    ]
-  },
-  {
     "id": "a36496dd-bc1f-408f-a47e-b636fef61275",
     "status": true,
     "title": "Pantalón",
@@ -53,6 +39,19 @@
     "thumbnails": [
       "imagen1.jpg",
       "imagen2.jpg"
+    ]
+  },
+  {
+    "id": "05703ca6-0a8d-4c83-ad59-5ba14edeba21",
+    "status": true,
+    "title": "Vestido",
+    "description": "Modal",
+    "code": "00002",
+    "price": 35000,
+    "stock": 15,
+    "category": "Urbano",
+    "thumbnails": [
+      ""
     ]
   }
 ]

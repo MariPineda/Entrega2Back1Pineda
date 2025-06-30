@@ -11,19 +11,12 @@
     <button type="submit">Agregar Producto</button>
 </form> 
 
-<!--<form id="deleteForm">
-    <input type="text" name="id" id="deleteId" placeholder="ID del producto a eliminar" required />
-    <button type="submit">Eliminar Producto</button>
-</form>-->
-
 <ul id="productsList"></ul>
 
 <script src="/socket.io/socket.io.js"></script>
 <script>
     const socket = io();
-
     const productForm = document.getElementById('productForm'); 
-    //const deleteForm = document.getElementById('deleteForm');
     const productList = document.getElementById('productsList');
 
     productForm.addEventListener('submit', e => {
@@ -37,22 +30,12 @@
         productForm.reset();
     }); 
 
-    //deleteForm.addEventListener('submit', e => {
-      //  e.preventDefault();
-       // const id = document.getElementById('deleteId').value.trim();
-        //if (id) {
-          //  socket.emit('delete-product', id);
-            //deleteForm.reset();
-        //}
-    //});
-
     socket.on('update-products', products => { 
-        console.log('⚡ Productos recibidos por socket:', products);
         productList.innerHTML = '';
         products.forEach(p => {
             const li = document.createElement('li');
             li.innerHTML = `
-                <strong>${p.title || p.titulo}</strong> - ${p.description || p.descripcion} - $${p.price || p.precio}
+                <strong>${p.title}</strong> - ${p.description} - $${p.price}
                 <button data-id="${p.id}">Eliminar</button>
             `;
             productList.appendChild(li);
