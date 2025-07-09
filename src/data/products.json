@@ -53,5 +53,18 @@
     "thumbnails": [
       ""
     ]
+  },
+  {
+    "id": "dd4cdd87-b644-40a2-bfcf-7a19d8e808ab",
+    "status": true,
+    "title": "bufanda",
+    "description": "lana, roja",
+    "code": "00001",
+    "price": 58000,
+    "stock": 6,
+    "category": "Urbano",
+    "thumbnails": [
+      "imagen1.jpg"
+    ]
   }
 ]

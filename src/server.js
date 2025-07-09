@@ -32,16 +32,27 @@ io.on('connection', async socket => {
     const products = await productManager.getProducts();
     socket.emit('update-products', products);
 
-    socket.on('new-product', async (productData) => {
-        await productManager.addProduct(productData);
-        const updatedProducts = await productManager.getProducts();
-        io.emit('update-products', updatedProducts);
+    socket.on('new-product', async (productData) => { 
+        try{
+            await productManager.addProduct(productData);
+            const updatedProducts = await productManager.getProducts();
+            io.emit('update-products', updatedProducts); 
+            socket.emit('product-added-success');
+        } catch (err) {
+            socket.emit('product-added-error', err.message);
+        }   
     });
 
-    socket.on('delete-product', async (productId) => {
-        await productManager.deleteProduct(productId);
+    socket.on('delete-product', async (productId) => { 
+        const result = await productManager.deleteProduct(productId);
         const updatedProducts = await productManager.getProducts();
-        io.emit('update-products', updatedProducts);
+        io.emit('update-products', updatedProducts);  
+
+        if (result) {
+            socket.emit('product-deleted-success');
+        } else {
+            socket.emit('product-deleted-error', 'No se pudo eliminar el producto.');
+        }
     });
 }); 
 
